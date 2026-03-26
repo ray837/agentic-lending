@@ -1,4 +1,6 @@
-from mcp.server.fastmcp import FastMCP
+import asyncio
+
+from mcp.server.fastmcp import FastMCP,Context
 import requests
 
 # Initialize MCP server
@@ -9,7 +11,7 @@ mcp = FastMCP("loan_queries")
 # TOOL 1: Stock Price
 # -------------------------
 @mcp.tool()
-def get_stock_price(symbol: str) -> dict:
+async def get_stock_price(symbol: str) -> dict:
     """
     Get latest stock price for a symbol (e.g. AAPL, TSLA)
     """
@@ -35,10 +37,17 @@ class LoanResponse(BaseModel):
     disbursal_date: str = Field(description="Date of disbursal in YYYY-MM-DD")
 
 @mcp.tool()
-def get_loan_details(loanid: str) -> dict:
+async def get_loan_details(loanid: str,ctx: Context) -> dict:
     """
     Fetches loan details for given loanid/lanid/applicationid
     """ +str(LoanResponse.model_json_schema())
+
+    await ctx.info("Fetching loan details...")
+    await asyncio.sleep(12)
+    # await ctx.debug(f"Looking up loan_id: {loanid}")
+    # await ctx.warning("Rate limit approaching")
+    # await ctx.error("Something failed")
+
     return {
         "loanid": loanid,
         "status": "ACTIVE",
@@ -87,7 +96,7 @@ class LoanKFS(BaseModel):
         description="Detailed EMI schedule"
     )
 @mcp.tool()
-def get_repay_details(loanid: str) -> dict:
+async def get_repay_details(loanid: str) -> dict:
     """
     Fetches repay details which includes Key Fact Statement for given loanid/lanid/applicationid
     """ +str(LoanKFS.model_json_schema())

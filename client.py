@@ -2,8 +2,10 @@ import queue
 import uuid
 
 import streamlit as st
-from server import chatbot, retrieve_all_threads, submit_async_task
+# from server import chatbot, retrieve_all_threads, submit_async_task
+from bob_mcp import chatbot, retrieve_all_threads, submit_async_task
 from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
+from bob_mcp import notification_queue
 
 # =========================== Utilities ===========================
 def generate_thread_id():
@@ -122,6 +124,16 @@ if user_input:
                             state="running",
                             expanded=True,
                         )
+                try:
+                            notif = notification_queue.get_nowait()
+
+                            message = notif.get("message") or notif.get("type")
+
+                            if status_holder["box"] is not None:
+                                status_holder["box"].write(f"🔔 {message}")
+
+                except:
+                            pass
 
                 # Stream ONLY assistant tokens
                 if isinstance(message_chunk, AIMessage):
