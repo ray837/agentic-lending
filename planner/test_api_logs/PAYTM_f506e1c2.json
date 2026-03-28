@@ -1,0 +1,32 @@
+{
+  "SESSION_ID": "PAYTM_f506e1c2",
+  "PARTNER": "PAYTM",
+  "REQID": "PAYTM_15b8bd1de9fe",
+  "CRN": "CRN_6dda1de6",
+  "LOAN_AMOUNT": 200000,
+  "TENURE_MONTHS": 18,
+  "LOAN_TYPE": "personal",
+  "CREATED_AT": "2026-03-28T12:22:58.050392",
+  "LAST_UPDATED": "2026-03-28T12:22:58.053426",
+  "EXECUTION_TRACE": [
+    {
+      "type": "data_change",
+      "action": "update",
+      "changes": {
+        "LOAN_AMOUNT": 200000
+      },
+      "old_values": {
+        "LOAN_AMOUNT": 150000
+      },
+      "timestamp": "2026-03-28T12:22:58.053426",
+      "plan_id": "plan_dab0a723"
+    }
+  ],
+  "FLOW_STATE": "initialized",
+  "FULL_NAME": "Vamsi Krishna",
+  "PAN_NUMBER": "ABCDE1234F",
+  "PAN_DOB": "1990-05-15",
+  "MOBILE": "9876543210",
+  "EMAIL": "vamsi@example.com",
+  "LOAN_PURPOSE": "home renovation"
+}

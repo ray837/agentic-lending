@@ -53,10 +53,10 @@ MCP_SERVERS = {
         "command": "python",
         "args": [r"C:\Users\rayid\Desktop\QABrain\mcp_hackathon\mcp_server.py"],
     },
-    "planner_agent": {
+    "BankingFlowServer": {
         "transport": "stdio",
         "command": "python",
-        "args": [r"C:\Users\rayid\Desktop\QABrain\mcp_hackathon\planner_mcp_server.py"],
+        "args": [r"C:\Users\rayid\Desktop\QABrain\mcp_hackathon\planner\mcp_server.py"],
     },
 }
 

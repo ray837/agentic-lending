@@ -1,0 +1,39 @@
+{
+  "SESSION_ID": "CRED_19d18542",
+  "PARTNER": "CRED",
+  "REQID": "CRED_ecdc0ab14b21",
+  "CRN": "CRN_34d4c22c",
+  "LOAN_AMOUNT": 150000,
+  "TENURE_MONTHS": 18,
+  "LOAN_TYPE": "personal",
+  "CREATED_AT": "2026-03-28T12:22:58.036612",
+  "LAST_UPDATED": "2026-03-28T12:22:58.049428",
+  "EXECUTION_TRACE": [
+    {
+      "type": "api_call",
+      "step": "pan_verification",
+      "success": true,
+      "status_code": 200,
+      "extracted": {
+        "PAN_VERIFIED": true,
+        "PAN_NAME_MATCH": "mock_pan_name_match",
+        "PAN_NAME": "mock_pan_name",
+        "PAN_STATUS": "success"
+      },
+      "elapsed_ms": 50,
+      "timestamp": "2026-03-28T12:22:58.048388",
+      "plan_id": "plan_9f1c49eb"
+    }
+  ],
+  "FLOW_STATE": "initialized",
+  "FULL_NAME": "Vamsi Krishna",
+  "PAN_NUMBER": "ABCDE1234F",
+  "PAN_DOB": "1990-05-15",
+  "MOBILE": "9876543210",
+  "EMAIL": "vamsi@example.com",
+  "LOAN_PURPOSE": "home renovation",
+  "PAN_VERIFIED": true,
+  "PAN_NAME_MATCH": "mock_pan_name_match",
+  "PAN_NAME": "mock_pan_name",
+  "PAN_STATUS": "success"
+}

@@ -1,0 +1,35 @@
+
+======================================================================
+{
+  "step": "pan_verification",
+  "timestamp": "2026-03-28T12:22:58.047389",
+  "request": {
+    "url": "https://api.cred.club/v1/kyc/pan/verify",
+    "method": "POST",
+    "payload": {
+      "pan": "ABCDE1234F",
+      "dob": "1990-05-15",
+      "full_name": "Vamsi Krishna",
+      "consent": true,
+      "request_id": "CRED_ecdc0ab14b21"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "response": {
+    "mock": true,
+    "data": {
+      "PAN_VERIFIED": true,
+      "PAN_NAME_MATCH": "mock_pan_name_match",
+      "PAN_NAME": "mock_pan_name",
+      "PAN_STATUS": "success"
+    }
+  },
+  "extracted": {
+    "PAN_VERIFIED": true,
+    "PAN_NAME_MATCH": "mock_pan_name_match",
+    "PAN_NAME": "mock_pan_name",
+    "PAN_STATUS": "success"
+  }
+}

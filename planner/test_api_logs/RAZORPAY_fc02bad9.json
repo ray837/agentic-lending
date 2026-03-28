@@ -1,0 +1,19 @@
+{
+  "SESSION_ID": "RAZORPAY_fc02bad9",
+  "PARTNER": "RAZORPAY",
+  "REQID": "RAZORPAY_e4796ac7506c",
+  "CRN": "CRN_0f4af6f3",
+  "LOAN_AMOUNT": 150000,
+  "TENURE_MONTHS": 18,
+  "LOAN_TYPE": "personal",
+  "CREATED_AT": "2026-03-28T12:22:58.053426",
+  "LAST_UPDATED": "2026-03-28T12:22:58.054391",
+  "EXECUTION_TRACE": [],
+  "FLOW_STATE": "initialized",
+  "FULL_NAME": "Vamsi Krishna",
+  "PAN_NUMBER": "ABCDE1234F",
+  "PAN_DOB": "1990-05-15",
+  "MOBILE": "9876543210",
+  "EMAIL": "vamsi@example.com",
+  "LOAN_PURPOSE": "home renovation"
+}

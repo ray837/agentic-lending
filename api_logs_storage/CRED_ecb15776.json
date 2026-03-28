@@ -1,0 +1,31 @@
+{
+  "SESSION_ID": "CRED_ecb15776",
+  "PARTNER": "CRED",
+  "REQID": "CRED_ee22f276b499",
+  "CRN": "CRN_d2f20127",
+  "LOAN_AMOUNT": 50000,
+  "TENURE_MONTHS": 12,
+  "LOAN_TYPE": "personal",
+  "CREATED_AT": "2026-03-28T12:35:35.099552",
+  "LAST_UPDATED": "2026-03-28T12:37:21.768170",
+  "EXECUTION_TRACE": [
+    {
+      "type": "requirement_gathering",
+      "data": {
+        "FULL_NAME": "Ray",
+        "PAN_NUMBER": "ABCDE1234F",
+        "PAN_DOB": "2001-02-01",
+        "MOBILE": "9444848494",
+        "LOAN_AMOUNT": 50000,
+        "LOAN_TYPE": "personal",
+        "TENURE_MONTHS": 12
+      },
+      "timestamp": "2026-03-28T12:37:21.768170"
+    }
+  ],
+  "FLOW_STATE": "requirements_collected",
+  "FULL_NAME": "Ray",
+  "PAN_NUMBER": "ABCDE1234F",
+  "PAN_DOB": "2001-02-01",
+  "MOBILE": "9444848494"
+}
